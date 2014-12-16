@@ -12,6 +12,8 @@ var Dancer = function(top, left, timeBetweenSteps){
 
 Dancer.prototype.step = function(){
   setTimeout(this.step.bind(this), this.timeBetweenSteps);
+  // test out using a wrapper function here
+  // lots of question on 'this' ^
 
 };
 // setTimeout(this.step what is the context within here???, this.timeBetweenSteps);
