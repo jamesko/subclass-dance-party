@@ -20,8 +20,21 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
+
+.dancer.breakDance {
+  background-image: url("http://img3.wikia.nocookie.net/__cb20131222052849/halonocanon/es/images/2/22/Breakdance.gif");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position:absolute;
+  border: none;
+  height: 50px;
+  width: 50px;
+}
+
 .dancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
 }
+
+

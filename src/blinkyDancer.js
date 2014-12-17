@@ -12,6 +12,12 @@ BlinkyDancer.prototype.step = function(){
   // add jQ animations etc.. here..
 }
 
+BlinkyDancer.prototype.changeColor = function(){
+  this.$node.on("click", function(){
+    $(this).css("color", "blue");
+  })
+};
+
 
 // var makeBlinkyDancer = function(top, left, timeBetweenSteps){
 

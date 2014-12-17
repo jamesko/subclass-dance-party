@@ -8,17 +8,22 @@ SalsaDancer.prototype = Object.create(Dancer.prototype);
 SalsaDancer.prototype.constructor = SalsaDancer;
 
 SalsaDancer.prototype.step = function(){
-  Dancer.prototype.step.call(this);
-  // this.$node.toggle();
+
+    Dancer.prototype.step.call(this);
+
   this.$node.animate({
     opacity: 1,
     left: "+=50",
-    height: "toggle"
-  }, 1000, function() {
+  }, 500, function() {
     // right: "-=200"
   });
+  this.$node.animate({
+    opacity: 1,
+    left: "-=50",
+  }, 500, function() {
+    // right: "-=20 0"
+  })
 
-  // this.$node.css("color", "blue";)
 
 };
 
