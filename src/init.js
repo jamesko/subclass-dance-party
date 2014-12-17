@@ -30,17 +30,22 @@ $(document).ready(function(){
 
     //dancer.$node.addClass(dancerMakerFunctionName);
 
-    $('body').append(dancer.$node);
+  $('body').append(dancer.$node);
     window.dancers.push(dancer);
   });
+
+
+  $(".button").on("click", function(){
+    for(var i = 0;i<window.dancers.length; i++){
+      window.dancers[i].lineup();
+      // window.dancers[i].$node.animate(({left: "20px"}));
+    }
+  })
+
+  $("body").on("mouseover", ".dancer", function(){
+    // $(this).addClass("blue");
+    $(this).css("border-color", "blue")
+  })
 });
 
-$(".button").on("click", function(){
-  for(var i = 0;i<window.dancers.length; i++){
-    window.dancers[i].lineup();
-    // window.dancers[i].$node.animate(({left: "20px"}));
-
-
-  }
-})
 

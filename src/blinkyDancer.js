@@ -1,5 +1,6 @@
 var BlinkyDancer = function(top, left, timeBetweenSteps){
   Dancer.apply(this, arguments);
+  // this.changeColor();
   // initializing arguements when inheriting superclass??
 }
 
@@ -13,9 +14,11 @@ BlinkyDancer.prototype.step = function(){
 }
 
 BlinkyDancer.prototype.changeColor = function(){
-  this.$node.on("click", function(){
-    $(this).css("color", "blue");
-  })
+  // this.$node.on("mouseover", function(){
+  //   $(this).css("border-color", "blue")
+  // })
+  $(this).css("border-color", "blue")
+
 };
 
 
